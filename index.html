@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preciosa mia</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="titulo">
+        <h1>Querida Mai <3 </h1>
+    </div>
+    <div class="container">
+        <div id="paragraph1" class="paragraph">
+            <p>Me dijiste que escribiera algo memorable, asi que quise hacerlo algo diferente, vamos a regresar al 25 de abril del 2023, solo compañeros de clase sin embargo fue en esta fecha que tuvimos nuestro primer viaje, quien iba a pensar que aunque ninguno de los dos sentia algo por el otro el destino nos llevaria a este punto, aun recuerdo que fuimos a mirar mangas y gracias a ti pude comprar otra parte de la figura que tanto queria. </p>
+            <img src="./1.jpeg" alt="Imagen 1" class="parrafo-imagen">
+            <img src="./2.jpeg" alt="Imagen 1" class="parrafo-imagen1">
+            <img src="./3.jpeg" alt="Imagen 1" class="parrafo-imagen1">
+          
+        </div>
+        <div id="paragraph2" class="paragraph hidden">
+            <p>Ahora vamos al 02 de mayo del mismo año. Segundo viaje en el que fuimos ambos y viaje en el que empezo nuestra historia. Desde ese viaje nuetra relacion fue creciendo continuamente hasta llegar  hasta aqui y aunque hubieron problemas, discusiones y baches en este proceso supimos salir adelante a pesar de todo y de todos. Recuerdo que te ayudaba a pasar las calles, o que en un ataque de rabia mientras ellos se fueron un parque nos quedamos viendo tokyo revengers, son recuerdos muy gratos para mi.(Obviamente nuestro primer beso) </p>
+            <img src="./4.jpg" alt="Imagen 2" class="imagen2">
+            <img src="./5.jpeg" alt="Imagen 3" class="imagen3">
+            <img src="./6.jpeg" alt="Imagen 1" class="imagen3">
+        </div>
+        <div id="paragraph3" class="paragraph hidden">
+            <p>Pasado el tiempo compartimos muchas cosas, jugamos bolirana, tomamos mucho cafe, salimos varias veces, te presente a mi familia y nos conocimos mucho mas, es por eso que ahora vamos a el siguiente año el 2023 ha sido una ruleta rusa de emociones sin embargo una fecha que quiero recordar y voy a hacerlo siempre, cuando te pedi ser mi novia, estaba tan nervioso, queria hacerlo de muchas formas y al final solo se me ocurrio algo simple , sin embargo ese dia hicimos tantas cosas que senti que era el momento adecuado y con la persona adecuada y aun lo pienso.</p>
+            <img src="./7.jpg" alt="Imagen 3" class="imagen3"> 
+            <img src="./8.jpg" alt="Imagen 1" class="parrafo-imagen">
+            <img src="./9.jpg" alt="Imagen 1" class="imagen2">
+           
+        </div>
+        <div id="paragraph4" class="paragraph hidden">
+            <p>Por ultimo el presente, como dije hemos pasado tantas cosas que me es imposible recordar como era mi vida antes de estar contigo, sin embargo me gusta que estes en ella, quiero que lo estes lo que me resta de vida, el que me expresaras lo que sentias, el que me dijeras que querias estar conmigo, el que ya no quisieras contenerte mas, hacen que mi vida sea tan feliz como nunca lo fue, es por eso que quiero estar ahi para ti tambien, ayudandote en el futuro, apoyandote y dandote todo el amor que te mereces.</p>
+            <img src="./10.jpeg" alt="Imagen 4" class="parrafo-imagen">
+            <img src="./11.jpeg" alt="Imagen 1" class="parrafo-imagen1">
+            <img src="./12.jpeg" alt="Imagen 1" class="parrafo-imagen1">
+           
+        </div>
+    </div>
+    <button class="boton" type="button" onclick="toggleParagraphs()">Tap here
+        <img class="imgboton" src="./corazon.png" alt="Botón de Siguiente">
+    </button>
+    <script>
+        let currentParagraph = 1;
+        function toggleParagraphs() {
+            document.getElementById('paragraph' + currentParagraph).classList.add('hidden');
+            currentParagraph = (currentParagraph % 4) + 1;
+            document.getElementById('paragraph' + currentParagraph).classList.remove('hidden');
+        }
+    </script>
+    
+        <img class="diario" src="./diario.png">
+        <img class="girasol" src="./png-transparent-sunflower-border-branches-flower-vine-sunflower-removebg-preview.png">
+  
+</body>
+</html>
